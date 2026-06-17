@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:\\\\Users\\\\Lenovo\\\\Desktop\\\\arca-week-1\\\\brand_assets\\\\.claude\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(gh auth *)",
+      "Bash(gh api *)",
+      "PowerShell($g = Get-Command gh -ErrorAction SilentlyContinue; if \\($g\\) { \"gh: \" + $g.Source } else { \"gh: NOT FOUND\" }; $git = Get-Command git -ErrorAction SilentlyContinue; if \\($git\\) { \"git: \" + $git.Source } else { \"git: NOT FOUND\" })",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git -c user.name=\"arca11\" -c user.email=\"arca11@briarbear.ai\" commit -q -m \"Initial commit: MRB Virtual Support landing page\")"
+    ]
+  }
+}
