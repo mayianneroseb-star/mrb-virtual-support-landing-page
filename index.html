@@ -298,6 +298,35 @@
     }
     .card p { font-size: 0.94rem; color: var(--muted); line-height: 1.62; }
 
+    /* ── FEATURE INTRO ── */
+    .feature-intro { padding: 96px 0; background: var(--mist); }
+    .feature-panel {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.5fr auto;
+      align-items: center;
+      gap: 48px;
+      padding: 60px 56px;
+      border-radius: 28px;
+      background:
+        radial-gradient(680px 320px at 90% -40%, rgba(244, 178, 79, 0.18), transparent 60%),
+        linear-gradient(155deg, var(--navy) 0%, var(--navy-deep) 100%);
+      box-shadow: 0 40px 90px -50px rgba(12, 42, 77, 0.6);
+    }
+    .feature-panel .eyebrow { color: var(--amber); }
+    .feature-panel h2 {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: clamp(1.75rem, 4vw, 2.7rem);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin: 14px 0 14px;
+    }
+    .feature-panel p { color: #AFC4E2; font-size: 1.06rem; max-width: 48ch; margin: 0; }
+    .feature-cta { justify-self: end; flex: none; }
+
     /* ── CTA / FOOTER ── */
     .footer {
       background:
@@ -543,6 +572,9 @@
       .services { padding: 80px 0 84px; }
       .testimonials { padding: 80px 0 84px; }
       .service-grid { grid-template-columns: repeat(2, 1fr); }
+      .feature-intro { padding: 80px 0; }
+      .feature-panel { grid-template-columns: 1fr; gap: 28px; padding: 48px 40px; }
+      .feature-cta { justify-self: start; }
     }
     @media (max-width: 640px) {
       .wrap { padding: 0 20px; }
@@ -560,6 +592,9 @@
       .t-cols { margin-top: 34px; }
       .footer-cta { padding: 64px 0 52px; }
       .footer-bottom { justify-content: center; text-align: center; }
+      .feature-intro { padding: 60px 0; }
+      .feature-panel { padding: 36px 26px; }
+      .feature-cta { width: 100%; justify-content: center; }
     }
   </style>
 </head>
@@ -693,6 +728,23 @@
             <h3>Virtual Assistance</h3>
             <p>Ongoing, flexible support that adapts to however your week actually unfolds.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURE INTRO -->
+    <section class="feature-intro" id="features">
+      <div class="wrap">
+        <div class="feature-panel reveal">
+          <div class="feature-copy">
+            <span class="eyebrow">A closer look</span>
+            <h2>See exactly how your week gets lighter.</h2>
+            <p>Behind every &ldquo;handled&rdquo; is a clear process &mdash; how research gets sourced, how your inbox stays at zero, and how documents come back ready to send. The features page walks through what working together actually looks like.</p>
+          </div>
+          <a class="btn btn-primary feature-cta" href="feature.html">
+            Explore features
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
         </div>
       </div>
     </section>
